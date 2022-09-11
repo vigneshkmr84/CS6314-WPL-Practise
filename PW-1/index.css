@@ -1,0 +1,19 @@
+#headerNavBar1 {
+    /* color: white; */
+    background-color: rgb(46, 63, 63);
+    /* background-color: rgb(46, 63, 63); */
+}
+
+#headerNavBar2 {
+    color: white;
+    background-color: rgb(17, 66, 104);
+    min-height: 100px;
+}
+
+nav .navbar-nav li a {
+    color: white !important;
+}
+
+.nav-link{
+    color: white;
+}
