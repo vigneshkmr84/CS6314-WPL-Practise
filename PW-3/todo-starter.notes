@@ -1,0 +1,24 @@
+when add elment, 
+- append the item & eraser
+- eraser click, will remove that element only 
+- when the item is clicked, strike through the text
+
+- need to use event delegation
+- sol 1: 
+    without delegation - select all the list items, go through them and define the click event
+    - just togglee between add and remove
+    - this might not work as we add list item, we need to add the handler 
+- sol 2:
+    - use event delegation
+    - use click event for the ui element
+    - as click event propagates to the child element, and check if the target it li item and then perform the action
+
+    ul.addEvetListenstr("click", function (e) {
+        if (e.target && e.target.nodeName == "LI" ){
+            e.target.classList.toggle("done);
+        }
+    )
+
+first add button
+toggle class
+remove item

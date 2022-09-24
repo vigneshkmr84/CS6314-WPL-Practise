@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>TODO List </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <script>
+
+        window.onload = function () {
+            console.log("loaded")
+            eraser = <i class="bi bi-eraser-fill"></i>
+            console.log(document.getElementById("new").value)
+            document.getElementById("add").onclick = function () {
+                // console.log(document.getElementById("new").value)
+                liElement = document.createElement("li")
+                liElement.innerHTML = document.getElementById("new").value
+                console.log(liElement)
+                era
+            }
+            /* addButton = document.getElementById("add")
+        
+            addButton.onClick = function (){
+            console.log(document.getElementById("new").value)
+            liElement = document.createElement("li")
+            liElement.innerHTML = document.getElementById("new").value
+            } */
+        };
+
+
+
+    </script>
+
+    <style>
+        .done {
+
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+
+<body class="vsc-initialized">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm bg-light">
+                <h3>Todo List</h3>
+                <input type="text" id="new">
+                <button id="add">Add Item</button>
+                <hr>
+                <ul id="ul1">
+                    <li>Post grades <i class="bi bi-eraser-fill"></i></li>
+                    <li>TA meeting <i class="bi bi-eraser-fill"></i></li>
+                </ul>
+
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+
+    <!-- <script src="./todo-starter.js"></script> -->
+
+</body>
+
+</html>

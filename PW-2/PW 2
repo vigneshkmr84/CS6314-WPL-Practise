@@ -1,0 +1,23 @@
+PW 2 
+no change in html & css,
+add functions via JS file 
+Form validation
+flow : 
+when user gets into a field
+//onFocusEvent 
+onFocus - form element is in focus 
+onblur - form element looses focus
+
+JS will add span elements near the input fields 
+the passwrd 6 chars in span info message 
+and change class to infoclass in yellow box
+abd ibce dibem trugger blur element 
+onblur we willl check and validate the input 
+if no input given then hide the info message (span) and willl not showany validation as there is no input 
+
+NOTE:
+validate only if input is present 
+ok or Error message 
+
+
+window.onload included to ensure that the elements are present 
