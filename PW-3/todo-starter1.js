@@ -14,7 +14,6 @@ document.onclick = function (e) {
     }
 }
 
-// removing element when eraser is clicked
 const parent = document.querySelector('#ul1')
 console.log(parent)
 parent.addEventListener('click', function (e) {
