@@ -1,0 +1,27 @@
+actor - firstname and lastname in single line
+
+button click and get the details 
+load the data when page is loaded
+
+results in Zebra type form, bootstrap table class 
+each row will be for one movie 
+only actor is multi valued info
+
+in handson xmlhttprequest
+
+fetch and promise, resolve into response option
+follow the response object, 
+response status, and the methods
+response.json function to convert to json object
+for xml we need to use response.text
+parse into xml object using DomParser
+
+once data in xml form, 
+
+
+xml.responseXML
+
+xmlDoc.getElementsByTagName("");
+
+
+handson sol is in e-learning
