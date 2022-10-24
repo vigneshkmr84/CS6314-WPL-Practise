@@ -1,0 +1,88 @@
+{
+    "results": [
+        {
+            "address_components": [
+                {
+                    "long_name": "850",
+                    "short_name": "850",
+                    "types": [
+                        "street_number"
+                    ]
+                },
+                {
+                    "long_name": "Cecil Drive",
+                    "short_name": "Cecil Dr",
+                    "types": [
+                        "route"
+                    ]
+                },
+                {
+                    "long_name": "Richardson",
+                    "short_name": "Richardson",
+                    "types": [
+                        "locality",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Collin County",
+                    "short_name": "Collin County",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "Texas",
+                    "short_name": "TX",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "United States",
+                    "short_name": "US",
+                    "types": [
+                        "country",
+                        "political"
+                    ]
+                },
+                {
+                    "long_name": "75080",
+                    "short_name": "75080",
+                    "types": [
+                        "postal_code"
+                    ]
+                }
+            ],
+            "formatted_address": "850 Cecil Dr, Richardson, TX 75080, USA",
+            "geometry": {
+                "location": {
+                    "lat": 32.9956623,
+                    "lng": -96.74921719999999
+                },
+                "location_type": "ROOFTOP",
+                "viewport": {
+                    "northeast": {
+                        "lat": 32.9969755802915,
+                        "lng": -96.7478679197085
+                    },
+                    "southwest": {
+                        "lat": 32.9942776197085,
+                        "lng": -96.7505658802915
+                    }
+                }
+            },
+            "place_id": "ChIJszJyqhQZTIYRVA_l2nkDG24",
+            "plus_code": {
+                "compound_code": "X7W2+78 Richardson, TX",
+                "global_code": "8645X7W2+78"
+            },
+            "types": [
+                "street_address"
+            ]
+        }
+    ],
+    "status": "OK"
+}
