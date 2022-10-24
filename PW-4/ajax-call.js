@@ -81,7 +81,7 @@ function parseMoviesXML(xmlData) {
             yearElement.innerText = obj.year;
 
             let descriptionElement = document.createElement('td')
-            descriptionElement.innerText = obj.description;
+            descriptionElement.innerText = obj.description ? obj.description: " ";
 
             let genreElement = document.createElement('td')
             genreElement.innerText = obj.genre;
