@@ -8,9 +8,9 @@ var coordinatesAPI = "https://maps.googleapis.com/maps/api/geocode/json?key=AIza
 async function submit() {
     var inputAddress = document.getElementById("location").value;
     console.log('Submitted : ' + inputAddress);
+    // let autoCompleteAddress = new google.maps.places.Autocomplete(inputAddress);
 
-    // if (inputAddress !== "" || inputAddress !== null) {
-    if (inputAddress.length != 0) {
+    if (inputAddress !== "" || inputAddress !== null) {
         let finalURL = coordinatesAPI + inputAddress
         console.log('Final url : ' + finalURL);
         let jsonData;
@@ -19,7 +19,6 @@ async function submit() {
                 .then(response => response.text())
                 .then((data) => { jsonData = JSON.parse(data) })
                 .catch((e) => { console.log(e) });
-
         // console.log(jsonData);
         console.log(jsonData['results']);
 
@@ -30,18 +29,21 @@ async function submit() {
         console.group(longitude);
         let coordinates = new google.maps.LatLng(latitude, longitude);
 
-        findHospitals(coordinates);
-
+        // nearBy(coordinates);
+        // nearBy(latitude, longitude);
     } else {
-        console.log('Invalid Input');
         alert('Invalid Input');
     }
 }
 
+function findHospitals(coordinates) {
+    // let map = 
+}
+let map;
+// function nearBy(latitude, longitude) {
 function findHospitals(latlong) {
-    var map;
-
-    console.log('Inside nearby function');
+    console.log('inside nearby function');
+    // let latlong = new google.maps.LatLng(latitude, longitude);
     map = new google.maps.Map(document.getElementById('output_map'), {
         center: latlong,
         zoom: 15,
@@ -50,22 +52,46 @@ function findHospitals(latlong) {
     var request = {
         location: latlong,
         radius: '1500',
-        type: ['pharmacy']
+        type: ['hospital']
     };
 
     service = new google.maps.places.PlacesService(map);
-
+    // service.nearbySearch(request, callback);
     service.nearbySearch(request, (results, status) => {
-        console.log('Inside callback function');
+        console.log('inside callback function');
         if (status == google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
-                console.log(results[i].geometry.location);
+
                 new google.maps.Marker({
                     map,
                     title: results[i].name,
                     position: results[i].geometry.location,
                 });
+
+
             }
         }
     });
 }
+
+function callback(results, status) {
+    console.log('inside callback function');
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+        for (var i = 0; i < results.length; i++) {
+
+            new google.maps.Marker({
+                map,
+                title: results[i].name,
+                position: results[i].geometry.location,
+            });
+
+
+        }
+    }
+}
+
+// initiating google maps api 
+// callback function
+/* function initMap(){
+
+} */
